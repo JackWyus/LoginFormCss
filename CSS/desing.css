@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --background: hsl(40, 6%, 9%);
+  --text-base: hsl(218, 13%, 72%);
+  --text-title: hsl(44, 26%, 77%);
+  --form-background: hsl(36, 7%, 13%);
+  --primary-color: hsl(43, 100%, 60%);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Geral */
+
+.container {
+  width: 37.5rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  border: 1px solid; 
+
+  text-align: left;
+}
+
+a,p{
+  color: var(--primary-color);
+
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+/* ------------- Header - cabeçalho  ------------- */
+
+header {
+  padding-top: 4rem;
+}
+
+svg:nth-of-type(1) {
+  display: block;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.titulo h1 {
+  color: var(--text-title);
+
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+header p {
+  color: var(--text-base);
+}
+
+/* ------------- Header - cabeçalho  ------------- */
+
+/* ------------- Form- formulário ------------- */
+
+.container-entradaDeDados {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.container-entradaDeDados p {
+  color: var(--text-base);
+
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+
+  font-family: "Poppins";
+}
+
+.container-entradaDeDados input{
+  background-color: var(--background);
+  color: var(--text-base);
+
+  width: 33.5rem;
+  height: 4.4rem;
+
+  border: 1px solid var(--text-base);
+  border-radius: 0.5rem;
+}
+
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 2rem;
+}
+
+.wrapper a{
+  font-weight: 600;
+}
+
+.container-lembre-me{
+  color: var(--text-base);
+
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.9rem;
+  text-align: left;
+}
+
+button {
+  background-color: var(--primary-color);
+
+  width: 33.4rem;
+  height: 5.1rem;
+  margin-bottom: 1.4rem;
+
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.container-dontHaveAccount{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-dontHaveAccount p{
+  color: var(--primary-color);
+}
+
+/* ------------- Form- formulário ------------- */
