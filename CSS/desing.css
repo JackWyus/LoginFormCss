@@ -124,6 +124,7 @@ header p {
   background-position: left;
   background-position-x: calc(100% - 97%);
   background-position-y: center;
+
 }
 
 
@@ -185,6 +186,27 @@ button {
 
 
 /*Animações*/
+
+.container-entradaDeDados input[type="email"]:focus{
+  background-image: url(../assets/images/mail-focus.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: calc(100% - 97%);
+  background-position-y: center;
+  border: 2px solid var(--primary-color);
+  outline: 0;
+}
+
+.container-entradaDeDados input[type="password"]:focus{
+  background-image: url(../assets/images/lock-focus.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: calc(100% - 97%);
+  background-position-y: center;
+  border: 2px solid var(--primary-color);
+  outline: 0;
+}
+
 
 a:hover{
   color: var(--button-hover);
