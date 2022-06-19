@@ -12,6 +12,8 @@
   --text-title: hsl(44, 26%, 77%);
   --form-background: hsl(36, 7%, 13%);
   --primary-color: hsl(43, 100%, 60%);
+  --button-text-color: hsl(43, 89%, 15%);
+  --button-hover: hsl(38, 63%, 49%);
 }
 
 html,
@@ -97,14 +99,34 @@ header p {
 
 .container-entradaDeDados input{
   background-color: var(--background);
+
   color: var(--text-base);
 
   width: 33.5rem;
   height: 4.4rem;
+  padding-left: 3.7rem;
 
   border: 1px solid var(--text-base);
   border-radius: 0.5rem;
 }
+
+.container-entradaDeDados input[type="email"]{
+  background-image: url(../assets/images/mail.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: calc(100% - 97%);
+  background-position-y: center;
+}
+
+.container-entradaDeDados input[type="password"]{
+  background-image: url(../assets/images/lock.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: calc(100% - 97%);
+  background-position-y: center;
+}
+
+
 
 .wrapper{
   display: flex;
@@ -115,6 +137,10 @@ header p {
 
 .wrapper a{
   font-weight: 600;
+}
+
+input[type="checkbox"]{
+  cursor: pointer
 }
 
 .container-lembre-me{
@@ -128,6 +154,7 @@ header p {
 
 button {
   background-color: var(--primary-color);
+  color: var(--button-text-color);
 
   width: 33.4rem;
   height: 5.1rem;
@@ -136,6 +163,12 @@ button {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.1rem;
 }
 
 .container-dontHaveAccount{
@@ -149,3 +182,22 @@ button {
 }
 
 /* ------------- Form- formulário ------------- */
+
+
+/*Animações*/
+
+a:hover{
+  color: var(--button-hover);
+  filter: brightness(2);
+  transition: 500ms;
+}
+
+
+button:hover{
+  background-color: var(--button-hover);
+  filter: brightness(1.5);
+  transition: 500ms;
+}
+/*Animações*/
+
+
